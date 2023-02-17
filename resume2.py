@@ -10,8 +10,9 @@ def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
 	return os.path.join(folder_path,selected_filename)
+filename=file_selector()
 if st.button("Process"):
-	filename=file_selector()
+	
 	st.write("You selected `%s` " %filename)
 
 
