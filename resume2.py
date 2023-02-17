@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 from resume_parser import resumeparse
+from pyresparser import ResumeParser
 import nltk
 #nltk.download('stopwords')
 def file_selector(folder_path='Resumes'):
@@ -12,7 +13,7 @@ if st.button("Process"):
 	filename=file_selector()
 	st.write("You selected `%s` " %filename)
 
-from pyresparser import ResumeParser
+
 	Skills_extraction=ResumeParser(filename).get_extracted_data()
 	extract_for_YoE=resumeparse.read_file(filename)
 # df=pd.DataFrame()
