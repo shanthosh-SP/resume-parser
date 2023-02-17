@@ -15,8 +15,6 @@ import pandas as pd
 # nltk.download('stopwords')
 # nltk.download('wordnet')
 # nltk.download('brown')
-st.write(en_core_web_sm.__version__)
-st.write(spacy.__version__)
 
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
