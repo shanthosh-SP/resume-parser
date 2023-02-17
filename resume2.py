@@ -4,6 +4,7 @@ import pandas as pd
 from resume_parser import resumeparse
 from pyresparser import ResumeParser
 import nltk
+import pandas as pd
 #nltk.download('stopwords')
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
@@ -83,7 +84,6 @@ if st.button("Process"):
 
 	print(c+' '+b)
 
-import pandas as pd
 
 	sal_data=pd.read_csv(r"Sal_data.csv")
 	sal_data.info()
