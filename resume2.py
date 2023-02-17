@@ -13,8 +13,8 @@ if st.button("Process"):
 	st.write("You selected `%s` " %filename)
 
 from pyresparser import ResumeParser
-Skills_extraction=ResumeParser(filename).get_extracted_data()
-extract_for_YoE=resumeparse.read_file(filename)
+	Skills_extraction=ResumeParser(filename).get_extracted_data()
+	extract_for_YoE=resumeparse.read_file(filename)
 # df=pd.DataFrame()
 # df=df.append(data,ignore_index=True)
 # cols=list(df)
@@ -30,18 +30,17 @@ extract_for_YoE=resumeparse.read_file(filename)
 #st.write("Skills----",Skills_extraction['skills'])
 #st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
+	Skills_extracted=Skills_extraction['skills']
 
-Skills_extracted=Skills_extraction['skills']
-
-skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees']
-skills_reqd_HR=['job postings', 'applicant tracking systems (ats)', 'candidate sourcing', 'interviewing skills', 'hiring process', 'job descriptions', 'talent acquisition', 'diversity and inclusion', 'background checks', 'onboarding']
-skills_reqd_sales=['objection handling', 'social selling', 'lead generation', 'business development', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'lead generation', 'customer acquisition', 'sales performance', 'sales reporting']
+	skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees']
+	skills_reqd_HR=['job postings', 'applicant tracking systems (ats)', 'candidate sourcing', 'interviewing skills', 'hiring process', 'job descriptions', 'talent acquisition', 'diversity and inclusion', 'background checks', 'onboarding']
+	skills_reqd_sales=['objection handling', 'social selling', 'lead generation', 'business development', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'lead generation', 'customer acquisition', 'sales performance', 'sales reporting']
 
 
-Skills_extracted=[x.lower() for x in Skills_extracted]
-Skills_extracted=[num.strip(' ') for num in Skills_extracted]
-Skills_extracted=[num.strip(')') for num in Skills_extracted]
-Skills_extracted=[num.strip('(') for num in Skills_extracted]
+	Skills_extracted=[x.lower() for x in Skills_extracted]
+	Skills_extracted=[num.strip(' ') for num in Skills_extracted]
+	Skills_extracted=[num.strip(')') for num in Skills_extracted]
+	Skills_extracted=[num.strip('(') for num in Skills_extracted]
 
 #st.write("Skills",Skills_extracted)
 res={'skills_reqd_DataScientist':[],'skills_reqd_HR':[],'skills_reqd_sales':[]}
