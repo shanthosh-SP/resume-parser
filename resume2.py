@@ -85,7 +85,7 @@ print(c+' '+b)
 
 import pandas as pd
 
-sal_data=pd.read_csv(r"D:/Nexathon/Sal_data.csv")
+sal_data=pd.read_csv(r"Sal_data.csv")
 sal_data.info()
 
 sal_data=pd.DataFrame(sal_data)
