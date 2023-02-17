@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from resume_parser import resumeparse
 import nltk
-nltk.download()
+nltk.download('stopwords')
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
