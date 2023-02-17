@@ -4,6 +4,8 @@ import pandas as pd
 from resume_parser import resumeparse
 from pyresparser import ResumeParser
 import nltk
+import spacy
+import en_core_web_sm
 import pandas as pd
 #nltk.download('stopwords')
 # nltk.download('punkt')
