@@ -1,4 +1,4 @@
-resume_parser==0.0.4
+resume_parser==0.8.4
 spacy==2.3.9
 pandas==1.5.3
 en_core_web_sm==2.3.1
