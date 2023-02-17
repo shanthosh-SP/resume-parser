@@ -6,13 +6,16 @@ from pyresparser import ResumeParser
 import nltk
 import pandas as pd
 #nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('universal_tagset')
-nltk.download('maxent_ne_chunker')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('brown')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('universal_tagset')
+# nltk.download('maxent_ne_chunker')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('brown')
+st.write(en_core_web_sm.__version__)
+st.write(spacy.__version__)
+
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
