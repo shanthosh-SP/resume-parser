@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 from resume_parser import resumeparse
-improt nltk.download('stopwords')
+import nltk.download('stopwords')
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
