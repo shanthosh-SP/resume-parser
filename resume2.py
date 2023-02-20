@@ -106,7 +106,7 @@ if st.button("Process"):
 			if a<=2 and b=="DataScientist":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "0-2")]
 				st.write(color_and_shape)
-			break
+				break
 
 			if   2 < a <=4 and b=="DataScientist":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "2-4")]
