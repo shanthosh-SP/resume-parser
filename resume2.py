@@ -108,12 +108,12 @@ if st.button("Process"):
 				st.write(color_and_shape)
 				break
 
-			if   2 < a <=4 and b=="DataScientist":
+			if a<=4 and b=="DataScientist":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "2-4")]
 				st.write(color_and_shape)
 				break
 
-			if 4< a <=10 and b=="DataScientist":
+			if a<=10 and b=="DataScientist":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "5-10")]
 				st.write(color_and_shape)
 				break
@@ -127,12 +127,12 @@ if st.button("Process"):
 				st.write(color_and_shape)
 				break
 
-			if 2 < a <=4 and b=="HR":
+			if a<=4 and b=="HR":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "3-4")]
 				st.write(color_and_shape)
 				break
 
-			if 4 < a <=10 and b=="HR":
+			if a<=10 and b=="HR":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "5-10")]
 				st.write(color_and_shape)
 				break
@@ -146,12 +146,12 @@ if st.button("Process"):
 				st.write(color_and_shape)
 				break
 
-			if 2 < a <=4 and b=="Sales":
+			if a <=4 and b=="Sales":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "3-4")]
 				st.write(color_and_shape)
 				break
 
-			if 4 < a <=10 and b=="Sales":
+			if a <=10 and b=="Sales":
 				color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "5-10")]
 				st.write(color_and_shape)
 				break
