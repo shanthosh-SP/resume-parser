@@ -162,7 +162,7 @@ if st.button("Process"):
 				break
 
 
-	# else:
-	# 	st.write("bye")
+			else:
+				st.write("bye")
 	final(extract_for_YoE['total_exp'],b)
         
