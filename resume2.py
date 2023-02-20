@@ -64,7 +64,7 @@ if st.button("Process"):
 			res['skills_reqd_HR'].append(str(i))
 		if i in skills_reqd_sales:
 			res['skills_reqd_sales'].append(str(i))
-	st.write(res)
+	#st.write(res)
    
 
 	HR=0
@@ -140,19 +140,19 @@ if st.button("Process"):
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "10+")]
 			st.write(color_and_shape)
 		if a<=2 and b=="Sales":
-			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "0-2")]
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "Sales") & (sal_data['YoE'] == "0-2")]
 			st.write(color_and_shape)
 		if 2<a <=4 and b=="Sales":
-			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "3-4")]
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "Sales") & (sal_data['YoE'] == "3-4")]
 			st.write(color_and_shape)
 
 		if 4<a <=10 and b=="Sales":
-			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "5-10")]
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "Sales") & (sal_data['YoE'] == "5-10")]
 			st.write(color_and_shape)
 
 
 		if a>=11 and b=="Sales":
-			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "10+")]
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "Sales") & (sal_data['YoE'] == "10+")]
 			st.write(color_and_shape)
 
 		
