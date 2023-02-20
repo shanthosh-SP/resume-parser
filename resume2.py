@@ -17,7 +17,7 @@ import pandas as pd
 # nltk.download('wordnet')
 # nltk.download('brown')
 
-@st.cache_data
+@st.experimental_singleton
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
