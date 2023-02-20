@@ -7,6 +7,7 @@ import nltk
 import spacy
 import en_core_web_sm
 import pandas as pd
+pip install resume-parser
 #nltk.download('stopwords')
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
@@ -39,16 +40,15 @@ if st.button("Process"):
 # st.table(df['skills'])
 # st.subheader("Experience from resume")
 # st.table(df['experience'])
-	st.write("Name of the Candidate: ",Skills_extraction['name'])
+	#st.write("Name of the Candidate: ",Skills_extraction['name'])
 #st.write("Skills----",Skills_extraction['skills'])
 #st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
 	Skills_extracted=Skills_extraction['skills']
 
-	skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees']
-	skills_reqd_HR=['job postings', 'applicant tracking systems (ats)', 'candidate sourcing', 'interviewing skills', 'hiring process', 'job descriptions', 'talent acquisition', 'diversity and inclusion', 'background checks', 'onboarding']
-	skills_reqd_sales=['objection handling', 'social selling', 'lead generation', 'business development', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'lead generation', 'customer acquisition', 'sales performance', 'sales reporting']
-
+	skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees','power bi']
+	skills_reqd_HR=['ats','applicant tracking systems','job postings', 'sourcing','source' ,'interviewing skills', 'hiring process', 'job descriptions', 'talent acquisition', 'diversity and inclusion', 'background checks', 'onboarding','hr consulting' ,'recruiting','recruiter','shortlisting','interviewing','end to end recruitment','deadline','reporting','hire','walk-in drives','phone interviewing',' candidate management systems','decisionmaking','management','psychology','monitoring''cms','screening resumes','lateral']
+	skills_reqd_sales=['sales', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'customer acquisition', 'sales performance', 'sales reporting','website sales','cilents','metrics','inside sales','strategic content development','presales executives','cold calling','executive',' marketing','business development','crm','market research', 'website sales', 'inside sales','negotiations','strategy','customer service']
 
 	Skills_extracted=[x.lower() for x in Skills_extracted]
 	Skills_extracted=[num.strip(' ') for num in Skills_extracted]
@@ -65,8 +65,6 @@ if st.button("Process"):
 		if i in skills_reqd_sales:
 			res['skills_reqd_sales'].append(str(i))
    
-
-
 
 	HR=0
 	DS=0
@@ -108,32 +106,61 @@ if st.button("Process"):
 		if a<=2 and b=="DataScientist":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "0-2")]
 			st.write(color_and_shape)
+			break
 
 		if   2 < a <=4 and b=="DataScientist":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "2-4")]
 			st.write(color_and_shape)
+			break
 
 		if 4< a <=10 and b=="DataScientist":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "5-10")]
 			st.write(color_and_shape)
+			break
 
 		if a>=11 and b=="DataScientist":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "DataScientist") & (sal_data['YoE'] == "10+")]
 			st.write(color_and_shape)
+			break
 		if a<=2 and b=="HR":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "0-2")]
 			st.write(color_and_shape)
+			break
 
 		if 2 < a <=4 and b=="HR":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "3-4")]
 			st.write(color_and_shape)
+			break
 
 		if 4 < a <=10 and b=="HR":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "5-10")]
 			st.write(color_and_shape)
+			break
+			
 		if a>=11 and b=="HR":
 			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "10+")]
 			st.write(color_and_shape)
+			break
+		if a<=2 and b=="Sales":
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "0-2")]
+			st.write(color_and_shape)
+			break
+
+		if 2 < a <=4 and b=="Sales":
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "3-4")]
+			st.write(color_and_shape)
+			break
+
+		if 4 < a <=10 and b=="Sales":
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "5-10")]
+			st.write(color_and_shape)
+			break
+			
+		if a>=11 and b=="Sales":
+			color_and_shape = sal_data.loc[(sal_data['Job Role'] == "HR") & (sal_data['YoE'] == "10+")]
+			st.write(color_and_shape)
+			break
+
 
 	# else:
 	# 	st.write("bye")
