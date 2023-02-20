@@ -39,7 +39,7 @@ if st.button("Process"):
 # st.table(df['skills'])
 # st.subheader("Experience from resume")
 # st.table(df['experience'])
-	#st.write("Name of the Candidate: ",Skills_extraction['name'])
+	st.write("Name of the Candidate: ",Skills_extraction['name'])
 #st.write("Skills----",Skills_extraction['skills'])
 	st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
