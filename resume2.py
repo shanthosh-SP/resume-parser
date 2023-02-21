@@ -17,7 +17,7 @@ import pandas as pd
 # nltk.download('wordnet')
 # nltk.download('brown')
 
-
+@st.cache_resource
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
@@ -30,17 +30,6 @@ if st.button("Process"):
 
 	Skills_extraction=ResumeParser(filename).get_extracted_data()
 	extract_for_YoE=resumeparse.read_file(filename)
-# df=pd.DataFrame()
-# df=df.append(data,ignore_index=True)
-# cols=list(df)
-# cols.insert(0,cols.pop(cols.index('name')))
-# df=df.reindex(columns=cols)
-# st.write(df[cols])
-
-# st.subheader("Skills from resume")
-# st.table(df['skills'])
-# st.subheader("Experience from resume")
-# st.table(df['experience'])
 	#st.write("Name of the Candidate: ",Skills_extraction['name'])
 #st.write("Skills----",Skills_extraction['skills'])
 	#st.write("Years of Experience-----",extract_for_YoE['total_exp'])
