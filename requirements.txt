@@ -389,7 +389,6 @@ tensorboard-data-server==0.6.1
 multipledispatch==0.6.0
 python-snappy==0.6.0
 nbclient==0.5.13
-datashape==0.5.4
 patsy==0.5.2
 inflection==0.5.1
 webencodings==0.5.1
@@ -455,7 +454,7 @@ bs4==0.0.1
 label-studio-tools==0.0.1
 fitz==0.0.1.dev2
 sklearn==0.0
-
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 
 
 
