@@ -1,8 +1,7 @@
 import streamlit as st
 import os
 import pandas as pd
-from resume_parser import resumeparse
-from pyresparser import ResumeParser
+
 import nltk
 import spacy
 import en_core_web_sm
@@ -16,8 +15,9 @@ import pandas as pd
 # nltk.download('stopwords')
 # nltk.download('wordnet')
 # nltk.download('brown')
+from resume_parser import resumeparse
+from pyresparser import ResumeParser
 
-@st.cache_data(ttl=3600)
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
