@@ -8,14 +8,14 @@ import en_core_web_sm
 import pandas as pd
 
 import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('universal_tagset')
-nltk.download('maxent_ne_chunker')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('brown')
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('universal_tagset')
+# nltk.download('maxent_ne_chunker')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('brown')
 from resume_parser import resumeparse
 from pyresparser import ResumeParser
 
@@ -40,7 +40,7 @@ if st.button("Process"):
 
 	skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees','power bi']
 	skills_reqd_HR=['ats','applicant tracking systems','job postings', 'sourcing','source' ,'interviewing skills', 'hiring process', 'job descriptions', 'talent acquisition', 'diversity and inclusion', 'background checks', 'onboarding','hr consulting' ,'recruiting','recruiter','shortlisting','interviewing','end to end recruitment','deadline','reporting','hire','walk-in drives','phone interviewing',' candidate management systems','decisionmaking','management','psychology','monitoring''cms','screening resumes','lateral']
-	skills_reqd_sales=['sales', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'customer acquisition', 'sales performance', 'sales reporting','website sales','cilents','metrics','inside sales','strategic content development','presales executives','cold calling','executive',' marketing','business development','crm','market research', 'website sales', 'inside sales','negotiations','strategy','customer service']
+	skills_reqd_sales=['sales', 'account management', 'client relationship management', 'sales forecasting', 'sales strategy', 'sales negotiations', 'pipeline management', 'territory management', 'customer acquisition', 'sales performance', 'sales reporting','website sales','cilents','metrics','inside sales','strategic content development','presales executives','cold calling','executive',' marketing','business development','crm','market research', 'website sales', 'inside sales','negotiations','customer service']
 
 	Skills_extracted=[x.lower() for x in Skills_extracted]
 	Skills_extracted=[num.strip(' ') for num in Skills_extracted]
@@ -83,6 +83,16 @@ if st.button("Process"):
 	if (sales>HR and sales>DS):
 		b="Sales"
 		print('He is applicable for Sales role')
+	if (HR==DS)
+		b="HR and DS"
+		print('He is applicable for HR role')
+	if (DS>HR and DS>sales):
+		b="DataScientist"
+		print('He is applicable for DataScientist role')
+	if (sales>HR and sales>DS):
+		b="Sales"
+		print('He is applicable for Sales role')
+	
 
 	st.write(c+' '+b)
 
