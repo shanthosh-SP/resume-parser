@@ -17,12 +17,13 @@ import pandas as pd
 # nltk.download('wordnet')
 # nltk.download('brown')
 
-@st.cache_resource
+
 def file_selector(folder_path='Resumes'):
 	filename=os.listdir(folder_path)
 	selected_filename=st.selectbox('select a file',filename)
 	return os.path.join(folder_path,selected_filename)
 filename=file_selector()
+@st.cache_data(ttl=3600)
 if st.button("Process"):
 	
 	st.write("You selected `%s` " %filename)
