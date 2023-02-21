@@ -425,7 +425,6 @@ ruamel.yaml.clib==0.2.7
 wcwidth==0.2.5
 doc2text==0.2.4
 pure-eval==0.2.2
-navigator-updater==0.2.1
 locket==0.2.1
 bkcharts==0.2
 TBB==0.2
