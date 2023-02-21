@@ -1,5 +1,3 @@
-
- https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 plac==1.1.3
 pdfminer.six==20221105
 diff-match-patch==20200713
@@ -194,7 +192,6 @@ python-json-logger==2.0.4
 Werkzeug==2.0.3
 PyHamcrest==2.0.2
 pyviz-comms==2.0.2
-pywinpty==2.0.2
 itsdangerous==2.0.1
 MarkupSafe==2.0.1
 QtPy==2.0.1
@@ -463,6 +460,7 @@ bs4==0.0.1
 label-studio-tools==0.0.1
 fitz==0.0.1.dev2
 sklearn==0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 
 
 
