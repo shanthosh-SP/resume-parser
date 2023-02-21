@@ -59,7 +59,7 @@ if st.button("Process"):
 			res['skills_reqd_HR'].append(str(i))
 		if i in skills_reqd_sales:
 			res['skills_reqd_sales'].append(str(i))
-	st.write(res)
+	#st.write(res)
    
 
 	HR=0
