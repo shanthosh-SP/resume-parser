@@ -427,7 +427,6 @@ doc2text==0.2.4
 pure-eval==0.2.2
 locket==0.2.1
 bkcharts==0.2
-TBB==0.2
 wincertstore==0.2
 backcall==0.2.0
 google-cloud-audit-log==0.2.0
