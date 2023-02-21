@@ -34,7 +34,6 @@ pyarrow==9.0.0
 phonenumbers==8.13.4
 ipython==8.2.0
 tenacity==8.0.1
-pycurl==7.44.1
 ipywidgets==7.6.5
 launchdarkly-server-sdk==7.5.0
 thinc==7.4.6
