@@ -93,7 +93,6 @@ async-timeout==4.0.2
 nibabel==4.0.2
 ordered-set==4.0.2
 chardet==4.0.0
-conda-build==3.21.8
 protobuf==3.19.6
 simplejson==3.18.0
 pycryptodome==3.15.0
@@ -111,7 +110,6 @@ h5py==3.6.0
 widgetsnbextension==3.5.2
 matplotlib==3.5.1
 anyio==3.5.0
-conda-verify==3.4.2
 Markdown==3.3.4
 python-utils==3.3.3
 jupyterlab==3.3.2
@@ -181,7 +179,6 @@ google-cloud-core==2.3.2
 en-core-web-sm==2.3.1
 pyflakes==2.3.1
 soupsieve==2.3.1
-anaconda-navigator==2.2.0
 django-rest-swagger==2.2.0
 rules==2.2
 snowballstemmer==2.2.0
@@ -236,10 +233,9 @@ param==1.12.0
 py==1.11.0
 rq==1.10.1
 sympy==1.10.1
-anaconda-client==1.9.0
+
 nipype==1.8.5
 pkginfo==1.8.2
-conda-package-handling==1.8.1
 pypandoc==1.8.1
 tensorboard-plugin-wit==1.8.1
 Send2Trash==1.8.0
@@ -312,7 +308,6 @@ win-inet-pton==1.1.0
 murmurhash==1.0.8
 pyresparser==1.0.6
 srsly==1.0.6
-conda-repo-cli==1.0.4
 itemloaders==1.0.4
 QtAwesome==1.0.3
 spacy-loggers==1.0.3
@@ -357,7 +352,7 @@ pyrsistent==0.18.0
 ruamel.yaml==0.17.21
 docutils==0.17.1
 ua-parser==0.16.1
-ruamel-yaml-conda==0.15.100
+
 statsmodels==0.13.2
 tokenizers==0.13.2
 prometheus-client==0.13.1
@@ -371,8 +366,6 @@ seaborn==0.11.2
 toolz==0.11.2
 cytoolz==0.11.0
 cycler==0.11.0
-django-annoying==0.10.6
-anaconda-project==0.10.2
 toml==0.10.2
 wasabi==0.10.1
 jmespath==0.10.0
@@ -407,7 +400,6 @@ pathy==0.6.2
 mccabe==0.6.1
 isodate==0.6.1
 tensorboard-data-server==0.6.1
-conda-pack==0.6.0
 multipledispatch==0.6.0
 python-snappy==0.6.0
 nbclient==0.5.13
@@ -439,7 +431,6 @@ typer==0.3.2
 attr==0.3.1
 Genderize==0.3.1
 ci-info==0.3.0
-conda-token==0.3.0
 drf-dynamic-fields==0.3.0
 drf-generators==0.3.0
 etelemetry==0.3.0
@@ -477,7 +468,6 @@ coreschema==0.0.4
 bs4==0.0.1
 label-studio-tools==0.0.1
 fitz==0.0.1.dev2
-conda-content-trust==0+unknown
 sklearn==0.0
 
 
