@@ -7,10 +7,6 @@ dask==2022.2.1
 distributed==2022.2.1
 fsspec==2022.2.0
 tzdata==2022.2
-scikit-learn-intelex==2021.20220215.102710
-imagecodecs==2021.8.26
-tifffile==2021.7.2
-daal4py==2021.5.0
 pytz==2019.3
 pywin32==302
 setuptools==61.2.0
@@ -488,4 +484,8 @@ label-studio-tools==0.0.1
 fitz==0.0.1.dev2
 conda-content-trust==0+unknown
 sklearn==0.0
+
+
+
+
 
