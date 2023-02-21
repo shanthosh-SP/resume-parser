@@ -83,16 +83,6 @@ if st.button("Process"):
 	if (sales>HR and sales>DS):
 		b="Sales"
 		print('He is applicable for Sales role')
-	if (HR==DS)
-		b="HR and DS"
-		print('He is applicable for HR role')
-	if (DS>HR and DS>sales):
-		b="DataScientist"
-		print('He is applicable for DataScientist role')
-	if (sales>HR and sales>DS):
-		b="Sales"
-		print('He is applicable for Sales role')
-	
 
 	st.write(c+' '+b)
 
