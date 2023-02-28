@@ -58,7 +58,7 @@ if st.button("Process"):
 			res['skills_reqd_HR'].append(str(i))
 		if i in skills_reqd_sales:
 			res['skills_reqd_sales'].append(str(i))
-	#st.write(res)
+	st.write(res)
    
 
 	HR=0
@@ -152,8 +152,7 @@ if st.button("Process"):
 		
 	final(extract_for_YoE['total_exp'],b)
         
-if st.button('Skills'):
-	st.write(res)
-
+	if st.button('Skills'):
+		st.write(res)
 
 
