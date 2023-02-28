@@ -50,8 +50,6 @@ if st.button("Process"):
 	Skills_extracted=[num.strip(')') for num in Skills_extracted]
 	Skills_extracted=[num.strip('(') for num in Skills_extracted]
 
-	if st.button('skills'):
-		st.write("Skills",Skills_extracted)
 	res={'skills_reqd_DataScientist':[],'skills_reqd_HR':[],'skills_reqd_sales':[]}
 	for i in Skills_extracted:
 		if i in skills_reqd_DS:
@@ -154,3 +152,8 @@ if st.button("Process"):
 		
 	final(extract_for_YoE['total_exp'],b)
         
+if st.button('Skills'):
+	st.write(res)
+
+
+
