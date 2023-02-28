@@ -35,7 +35,7 @@ if st.button("Process"):
 	
 	extract_for_YoE=resumeparse.read_file(filename)
 	#st.write("Name of the Candidate: ",Skills_extraction['name'])
-#st.write("Skills----",Skills_extraction['skills'])
+	st.write("Skills----",Skills_extraction['skills'])
 	#st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
 	Skills_extracted=Skills_extraction['skills']
