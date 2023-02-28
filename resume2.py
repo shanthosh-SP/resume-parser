@@ -35,7 +35,7 @@ if st.button("Process"):
 	
 	extract_for_YoE=resumeparse.read_file(filename)
 	#st.write("Name of the Candidate: ",Skills_extraction['name'])
-	#st.write("Skills----",Skills_extraction['skills'])
+	st.write("Skills----",Skills_extraction['skills'])
 	#st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
 	Skills_extracted=Skills_extraction['skills']
@@ -58,7 +58,7 @@ if st.button("Process"):
 			res['skills_reqd_HR'].append(str(i))
 		if i in skills_reqd_sales:
 			res['skills_reqd_sales'].append(str(i))
-	st.write("The Skills that get Matched with our Keywords",res)
+	#st.write("The Skills that get Matched with our Keywords",res)
    
 
 	HR=0
