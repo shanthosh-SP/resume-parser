@@ -1,13 +1,13 @@
 YoE,Experience,Job Role,Salary(LPA)
-0-2,Fresher,DataScientist,3
-3-4,Intermediate ,DataScientist,10
-5-10,Senior,DataScientist,12
-10+,Advanced,DataScientist,18
-0-2,Fresher,HR,2
-3-4,Intermediate ,HR,4
-5-10,Senior,HR,8
-10+,Advanced,HR,10
-0-2,Fresher,Sales,2.5
-3-4,Intermediate ,Sales,6
-5-10,Senior,Sales,9
-10+,Advanced,Sales,12
+0-2,Fresher,DataScientist,1-3
+3-4,Intermediate ,DataScientist,4-10
+5-10,Senior,DataScientist,10-12
+10+,Advanced,DataScientist,13-18
+0-2,Fresher,HR,1-2
+3-4,Intermediate ,HR,2-4
+5-10,Senior,HR,4-8
+10+,Advanced,HR,8-10
+0-2,Fresher,Sales,1-2.5
+3-4,Intermediate ,Sales,3-6
+5-10,Senior,Sales,7-10
+10+,Advanced,Sales,10-12
