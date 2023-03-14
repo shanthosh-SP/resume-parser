@@ -277,6 +277,7 @@ if st.button("Process"):
 			st.write("Years of Experience is not Mentioned in the JD")
 			st.write(c+' '+b)
 		else:
+			st.write(c+' '+b)
 			final(a,b)
         
 	
