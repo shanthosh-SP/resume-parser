@@ -94,7 +94,7 @@ if st.button("Process"):
 		sal_data=pd.DataFrame(sal_data)
 		
 
-		st.write(a,b)
+		#st.write(a,b)
 
 		def final(a,b):
 			
@@ -156,7 +156,7 @@ if st.button("Process"):
 		text = "\n".join([paragraph.text for paragraph in doc.paragraphs])
 		pattern = r"(\d+)\+?\s*(years?|yrs)"
 		matches = re.findall(pattern, text, re.IGNORECASE)
-		a= int(matches[0][0]) if matches else print("The JD doesn't mention about the Experience Level")
+		a= int(matches[0][0]) if matches else 0
 		st.write(f"Years of experience in {filename}: {a}")
 
 		Skills_extraction=ResumeParser(filename).get_extracted_data()
@@ -220,10 +220,6 @@ if st.button("Process"):
 		sal_data.info()
 
 		sal_data=pd.DataFrame(sal_data)
-		
-
-		st.write(a,b)
-
 		def final(a,b):
 			
 			if a<=2 and b=="DataScientist":
@@ -277,7 +273,11 @@ if st.button("Process"):
 				st.write(color_and_shape)
 
 			
-		final(a,b)
+		if a=0:
+			st.write("Years of Experience is not Mentioned in the JD")
+			st.write("So, he is applicable for %s ",b)
+		else:
+			final(a,b)
         
 	
 
