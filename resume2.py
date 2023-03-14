@@ -157,7 +157,7 @@ if st.button("Process"):
 		pattern = r"(\d+)\+?\s*(years?|yrs)"
 		matches = re.findall(pattern, text, re.IGNORECASE)
 		a= int(matches[0][0]) if matches else 0
-		st.write(f"Years of experience in {filename}: {a}")
+		#st.write(f"Years of experience in {filename}: {a}")
 
 		Skills_extraction=ResumeParser(filename).get_extracted_data()
 		extract_for_YoE=resumeparse.read_file(filename)
