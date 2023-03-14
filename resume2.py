@@ -273,7 +273,7 @@ if st.button("Process"):
 				st.write(color_and_shape)
 
 			
-		if a=0:
+		if a==0:
 			st.write("Years of Experience is not Mentioned in the JD")
 			st.write("So, he is applicable for %s ",b)
 		else:
