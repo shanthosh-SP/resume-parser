@@ -34,10 +34,6 @@ if st.button("Process"):
 		Skills_extraction=ResumeParser(filename).get_extracted_data()
 		
 		extract_for_YoE=resumeparse.read_file(filename)
-		st.write(extract_for_YoE['total_exp'])
-		st.write("Name of the Candidate: ",Skills_extraction['name'])
-		st.write("Skills----",Skills_extraction['skills'])
-		st.write("Years of Experience-----",extract_for_YoE['total_exp'])
 
 		Skills_extracted=Skills_extraction['skills']
 	
@@ -59,7 +55,7 @@ if st.button("Process"):
 				res['skills_reqd_HR'].append(str(i))
 			if i in skills_reqd_sales:
 				res['skills_reqd_sales'].append(str(i))
-		st.write("The Skills that get Matched with our Keywords",res)
+		#st.write("The Skills that get Matched with our Keywords",res)
 	   
 
 		HR=0
@@ -158,19 +154,16 @@ if st.button("Process"):
 
 		doc = docx.Document(filename)
 		text = "\n".join([paragraph.text for paragraph in doc.paragraphs])
-# Regular expression pattern to match years of experience
 		pattern = r"(\d+)\+?\s*(years?|yrs)"
-# Search for matches in the document text
 		matches = re.findall(pattern, text, re.IGNORECASE)
-# Extract the years of experience from the first match
-		a= int(matches[0][0]) if matches else 0
+		a= int(matches[0][0]) if matches else print("The JD doesn't mention about the Experience Level")
 		st.write(f"Years of experience in {filename}: {a}")
 
 		Skills_extraction=ResumeParser(filename).get_extracted_data()
 		extract_for_YoE=resumeparse.read_file(filename)
 		
-		st.write("Name of the Candidate: ",Skills_extraction['name'])
-		st.write("Skills----",Skills_extraction['skills'])
+# 		st.write("Name of the Candidate: ",Skills_extraction['name'])
+# 		st.write("Skills----",Skills_extraction['skills'])
 		Skills_extracted=Skills_extraction['skills']
 
 		skills_reqd_DS=['machine learning','data mining','predictive modeling', 'statistical analysis', 'data visualization', 'natural language processing', 'big data', 'data warehousing', 'sql', 'python/r programming', 'deep learning', 'artificial intelligence', 'data analytics', 'a/b testing', 'feature engineering', 'etl processes', 'time series analysis', 'regression analysis', 'cluster analysis', 'decision trees','power bi']
