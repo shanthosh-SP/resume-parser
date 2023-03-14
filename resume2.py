@@ -183,7 +183,7 @@ if st.button("Process"):
 				res['skills_reqd_HR'].append(str(i))
 			if i in skills_reqd_sales:
 				res['skills_reqd_sales'].append(str(i))
-		st.write("The Skills that get Matched with our Keywords",res)
+		#st.write("The Skills that get Matched with our Keywords",res)
 	   
 
 		HR=0
@@ -211,7 +211,7 @@ if st.button("Process"):
 			b="Sales"
 			print('He is applicable for Sales role')
 
-		st.write(c+' '+b)
+		#st.write(c+' '+b)
 		#a=extract_for_YoE['total_exp']
 		#st.write(a)
 
@@ -275,7 +275,7 @@ if st.button("Process"):
 			
 		if a==0:
 			st.write("Years of Experience is not Mentioned in the JD")
-			st.write("So, he is applicable for %s ",b)
+			st.write(c+' '+b)
 		else:
 			final(a,b)
         
