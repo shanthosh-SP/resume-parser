@@ -275,7 +275,7 @@ if st.button("Process"):
 			
 		if a==0:
 			st.write("Years of Experience is not Mentioned in the JD")
-			st.write(c+' '+b)
+			st.write("Based on our Recommendation, He is good for %s Role" %b)
 		else:
 			st.write(c+' '+b)
 			final(a,b)
