@@ -158,7 +158,7 @@ if st.button("Process"):
 		matches = re.findall(pattern, text, re.IGNORECASE)
 		a= int(matches[0][0]) if matches else 0
 		#st.write(f"Years of experience in {filename}: {a}")
-
+		st.write("You selected `%s` " %filename)
 		Skills_extraction=ResumeParser(filename).get_extracted_data()
 		extract_for_YoE=resumeparse.read_file(filename)
 		
@@ -275,7 +275,7 @@ if st.button("Process"):
 			
 		if a==0:
 			st.write("Years of Experience is not Mentioned in the JD")
-			st.write("Based on our Recommendation, He is good for %s Role" %b)
+			st.write("Based on the Recommendation, He is good for %s Role" %b)
 		else:
 			st.write(c+' '+b)
 			final(a,b)
